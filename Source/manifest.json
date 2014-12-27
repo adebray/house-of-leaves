@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "House of Leaves",
+	"version": "1.0",
+	"description": "Makes all instances of the word 'House' blue.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
