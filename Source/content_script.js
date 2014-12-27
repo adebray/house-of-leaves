@@ -10,6 +10,7 @@ function walk(node) {
 	switch (node.nodeType) {
 		case 1:  // Element
 		case 9:  // Document
+			handleText(node); // this is probably a bad idea.
 		case 11: // Document fragment
 			child = node.firstChild;
 			while (child) {
